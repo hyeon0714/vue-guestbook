@@ -56,7 +56,7 @@
                 console.log("클릭");
                 axios({
                     method: 'get', // put, post, delete 
-                    url: 'http://localhost:8888/guestbook7/list',
+                    url: 'http://localhost:8888/list',
                     headers: { "Content-Type": "application/json; charset=utf-8" }, //전송타입
                     // params: guestbookVo, //get방식 파라미터로 값이 전달
                     // data: guestbookVo, //put, post, delete 방식 자동으로 JSON으로 변환 전달
@@ -75,7 +75,7 @@
                 console.log(this.guestbookVo);
                 axios({
                     method: 'post', // put, post, delete 저장은 post로 한다
-                    url: 'http://localhost:8888/guestbook7/list',
+                    url: 'http://localhost:8888/list',
                     headers: { "Content-Type": "application/json; charset=utf-8" }, //전송타입
                     // params: guestbookVo, //get방식 파라미터로 값이 전달
                     data: this.guestbookVo, //put, post, delete 방식 자동으로 JSON으로 변환 전달
