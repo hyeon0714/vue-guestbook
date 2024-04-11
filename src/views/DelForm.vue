@@ -34,7 +34,7 @@
 
                 axios({
                     method: 'delete', // put, post, delete 저장은 post로 한다
-                    url: 'http://localhost:8888/list/'+this.guest.no,
+                    url: `${this.$store.state.apiBaseUrl}/list/${this.guest.no}`,
                     headers: { "Content-Type": "application/json; charset=utf-8" }, //전송타입
                     // params: guestbookVo, //get방식 파라미터로 값이 전달
                     data: {password: this.guest.password}, //put, post, delete 방식 자동으로 JSON으로 변환 전달
